@@ -17,7 +17,7 @@ namespace Proyecto.Models
         public string Direccion { get; set; }
         public string FechaNacimiento { get; set; }
         public string Sexo { get; set; }
-        public string Contrasena { get; set; }
+        public string Contraseña { get; set; }
 
     }
 }
