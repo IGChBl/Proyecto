@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar o Eliminar Facturas Erróneas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar o Eliminar Facturas Erróneas.Designer.cs">
+      <DependentUpon>Actualizar o Eliminar Facturas Erróneas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar Estados de Cuentas de los Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar Estados de Cuentas de los Clientes.Designer.cs">
+      <DependentUpon>Consultar Estados de Cuentas de los Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,9 +100,21 @@
     <Compile Include="frmNuevaFactura.Designer.cs">
       <DependentUpon>frmNuevaFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Generar facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generar facturas.Designer.cs">
+      <DependentUpon>Generar facturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Actualizar o Eliminar Facturas Erróneas.resx">
+      <DependentUpon>Actualizar o Eliminar Facturas Erróneas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar Estados de Cuentas de los Clientes.resx">
+      <DependentUpon>Consultar Estados de Cuentas de los Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevaFactura.resx">
       <DependentUpon>frmNuevaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generar facturas.resx">
+      <DependentUpon>Generar facturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
