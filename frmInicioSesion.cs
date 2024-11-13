@@ -16,7 +16,9 @@ namespace Proyecto
         private List<Usuario> usuarios = new List<Usuario>
         {
             new Usuario { Nombre = "Iván", Apellido = "Chavarría", Matricula = "15021113", Carrera = "Ingeniería en Sistemas", Telefono = "", Email = "ichavarria@uamv.edu.ni", Direccion = "", FechaNacimiento = "31/07/1997", Sexo = "M", Contraseña = "ABC123!" },
-            new Usuario { Nombre = "user1", Apellido = "Perez", Matricula = "0002", Carrera = "Ingeniería", Telefono = "87654321", Email = "user1@example.com", Direccion = "Direccion 2", FechaNacimiento = "02/02/1992", Sexo = "F", Contraseña = "abcd" }
+            new Usuario { Nombre = "", Apellido = "", Matricula = "", Carrera = "Ingeniería en Sistemas", Telefono = "", Email = "", Direccion = "", FechaNacimiento = "", Sexo = "F", Contraseña = "" },
+            new Usuario { Nombre = "", Apellido = "", Matricula = "", Carrera = "Ingeniería en Sistemas", Telefono = "", Email = "", Direccion = "", FechaNacimiento = "", Sexo = "F", Contraseña = "" },
+          
         };
 
         public frmInicioSesion()
