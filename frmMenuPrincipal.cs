@@ -16,5 +16,10 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void frmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

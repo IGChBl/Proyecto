@@ -66,7 +66,7 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // facturaciónToolStripMenuItem
@@ -102,13 +102,13 @@
             // agregarClienteToolStripMenuItem
             // 
             this.agregarClienteToolStripMenuItem.Name = "agregarClienteToolStripMenuItem";
-            this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.agregarClienteToolStripMenuItem.Text = "Agregar Cliente";
             // 
             // listadoDeClientesToolStripMenuItem
             // 
             this.listadoDeClientesToolStripMenuItem.Name = "listadoDeClientesToolStripMenuItem";
-            this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.listadoDeClientesToolStripMenuItem.Text = "Listado de Clientes";
             // 
             // configuraciónToolStripMenuItem
@@ -126,6 +126,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenuPrincipal";
             this.Text = "Sistema de Facturación - Menú Principal";
+            this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
