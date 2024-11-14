@@ -16,7 +16,7 @@ namespace Proyecto
         private List<Usuario> usuarios = new List<Usuario>
         {
             new Usuario { Nombre = "Iván", Apellido = "Chavarría", Matricula = "15021113", Carrera = "Ingeniería en Sistemas", Telefono = "", Email = "ichavarria@uamv.edu.ni", Direccion = "", FechaNacimiento = "31/07/1997", Sexo = "M", Contraseña = "ABC123!" },
-            new Usuario { Nombre = "", Apellido = "", Matricula = "", Carrera = "Ingeniería en Sistemas", Telefono = "", Email = "", Direccion = "", FechaNacimiento = "", Sexo = "F", Contraseña = "" },
+            new Usuario { Nombre = "Violeta", Apellido = "Vanegas", Matricula = "", Carrera = "Ingeniería en Sistemas", Telefono = "", Email = "", Direccion = "", FechaNacimiento = "", Sexo = "F", Contraseña = "PantonyRival" },
             new Usuario { Nombre = "", Apellido = "", Matricula = "", Carrera = "Ingeniería en Sistemas", Telefono = "", Email = "", Direccion = "", FechaNacimiento = "", Sexo = "F", Contraseña = "" },
           
         };
