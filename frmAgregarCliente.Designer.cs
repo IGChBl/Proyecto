@@ -90,35 +90,35 @@
             // 
             this.tbNombre.Location = new System.Drawing.Point(257, 66);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(100, 22);
+            this.tbNombre.Size = new System.Drawing.Size(189, 22);
             this.tbNombre.TabIndex = 5;
             // 
             // tbApellido
             // 
             this.tbApellido.Location = new System.Drawing.Point(257, 112);
             this.tbApellido.Name = "tbApellido";
-            this.tbApellido.Size = new System.Drawing.Size(100, 22);
+            this.tbApellido.Size = new System.Drawing.Size(189, 22);
             this.tbApellido.TabIndex = 6;
             // 
             // tbDireccion
             // 
             this.tbDireccion.Location = new System.Drawing.Point(257, 270);
             this.tbDireccion.Name = "tbDireccion";
-            this.tbDireccion.Size = new System.Drawing.Size(100, 22);
+            this.tbDireccion.Size = new System.Drawing.Size(189, 22);
             this.tbDireccion.TabIndex = 7;
             // 
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(257, 214);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(100, 22);
+            this.tbEmail.Size = new System.Drawing.Size(189, 22);
             this.tbEmail.TabIndex = 8;
             // 
             // tbTelefono
             // 
             this.tbTelefono.Location = new System.Drawing.Point(257, 166);
             this.tbTelefono.Name = "tbTelefono";
-            this.tbTelefono.Size = new System.Drawing.Size(100, 22);
+            this.tbTelefono.Size = new System.Drawing.Size(189, 22);
             this.tbTelefono.TabIndex = 9;
             // 
             // btnGuardarCliente

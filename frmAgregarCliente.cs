@@ -29,6 +29,22 @@ namespace Proyecto
 
         private void btnGuardarCliente_Click(object sender, EventArgs e)
         {
+            string telefono = tbTelefono.Text;
+            string email = tbEmail.Text;
+
+            // Validación del Teléfono
+            if (telefono.Length != 8 || !System.Text.RegularExpressions.Regex.IsMatch(telefono, @"^\d{8}$")) // expresión regular para validar un número de teléfono de 8 dígitos
+            {
+                MessageBox.Show("El número de teléfono debe ser de 8 dígitos y contener solo números.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Detiene el proceso de guardado si la validación falla
+            }
+
+            // Validación del Correo Electrónico
+            if (!email.Contains("@") || !System.Text.RegularExpressions.Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$")) // expresión regular para validar un correo electrónico
+            {
+                MessageBox.Show("Ingrese un correo electrónico válido que contenga '@' y un dominio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Detiene el proceso de guardado si la validación falla
+            }
             // Crear una nueva instancia de Cliente con los datos ingresados
             Cliente nuevoCliente = new Cliente
             {

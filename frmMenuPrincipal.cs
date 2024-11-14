@@ -32,5 +32,11 @@ namespace Proyecto
             frmGenerarFactura generarFacturaForm = new frmGenerarFactura();
             generarFacturaForm.Show(); // Muestra el formulario de generación de factura
         }
+
+        private void agregarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAgregarCliente agregarClienteForm = new frmAgregarCliente();
+            agregarClienteForm.Show(); // Muestra el formulario de agregar cliente
+        }
     }
 }
