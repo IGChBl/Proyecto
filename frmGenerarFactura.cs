@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Generar_facturas : Form
+    public partial class frmGenerarFactura : Form
     {
-        public Generar_facturas()
+        public frmGenerarFactura()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Generar_facturas_Load(object sender, EventArgs e)
         {
 
         }

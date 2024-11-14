@@ -56,7 +56,7 @@
             this.lblUser.AutoSize = true;
             this.lblUser.Location = new System.Drawing.Point(69, 120);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(71, 20);
+            this.lblUser.Size = new System.Drawing.Size(57, 16);
             this.lblUser.TabIndex = 2;
             this.lblUser.Text = "Usuario:";
             // 
@@ -87,6 +87,7 @@
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblWelcome
             // 

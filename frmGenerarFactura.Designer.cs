@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class Generar_facturas
+    partial class frmGenerarFactura
     {
         /// <summary>
         /// Required designer variable.
@@ -126,6 +126,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Generar_facturas";
             this.Text = "Generar_facturas";
+            this.Load += new System.EventHandler(this.Generar_facturas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

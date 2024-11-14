@@ -21,5 +21,16 @@ namespace Proyecto
         {
 
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void nuevaFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGenerarFactura generarFacturaForm = new frmGenerarFactura();
+            generarFacturaForm.Show(); // Muestra el formulario de generación de factura
+        }
     }
 }
