@@ -38,5 +38,11 @@ namespace Proyecto
             frmAgregarCliente agregarClienteForm = new frmAgregarCliente();
             agregarClienteForm.Show(); // Muestra el formulario de agregar cliente
         }
+
+        private void verHistorialDeFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHistorialFacturas historialFacturasForm = new frmHistorialFacturas();
+            historialFacturasForm.Show();// muestra el formulario historial facturas
+        }
     }
 }

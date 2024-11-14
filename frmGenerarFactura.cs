@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Proyecto.frmAgregarCliente;
 using Proyecto.Models;
+using static Proyecto.frmHistorialFacturas;
 
 namespace Proyecto
 {
@@ -94,6 +95,19 @@ namespace Proyecto
                 return;
             }
 
+            // Crear la factura
+            Factura nuevaFactura = new Factura
+            {
+                Numero = "F" + DateTime.Now.Ticks, // Genera un número único para la factura
+                Cliente = clienteSeleccionado.Nombre + " " + clienteSeleccionado.Apellido,
+                Fecha = DateTime.Now,
+                Servicios = serviciosSeleccionados,
+                Total = totalFactura
+            };
+
+            // Guardar la factura en el almacenamiento
+            FacturaStorage.HistorialFacturas.Add(nuevaFactura);
+
             // Crear el contenido de la factura
             StringBuilder factura = new StringBuilder();
             factura.AppendLine("FACTURA");
@@ -118,6 +132,8 @@ namespace Proyecto
 
             // Opcional: Abrir el archivo automáticamente
             System.Diagnostics.Process.Start("notepad.exe", rutaFactura);
+
+
         }
     }
 }

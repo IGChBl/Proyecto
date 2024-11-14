@@ -91,6 +91,7 @@
             this.verHistorialDeFacturasToolStripMenuItem.Name = "verHistorialDeFacturasToolStripMenuItem";
             this.verHistorialDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
             this.verHistorialDeFacturasToolStripMenuItem.Text = "Ver Historial de Facturas";
+            this.verHistorialDeFacturasToolStripMenuItem.Click += new System.EventHandler(this.verHistorialDeFacturasToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -104,14 +105,14 @@
             // agregarClienteToolStripMenuItem
             // 
             this.agregarClienteToolStripMenuItem.Name = "agregarClienteToolStripMenuItem";
-            this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.agregarClienteToolStripMenuItem.Text = "Agregar Cliente";
             this.agregarClienteToolStripMenuItem.Click += new System.EventHandler(this.agregarClienteToolStripMenuItem_Click);
             // 
             // listadoDeClientesToolStripMenuItem
             // 
             this.listadoDeClientesToolStripMenuItem.Name = "listadoDeClientesToolStripMenuItem";
-            this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.listadoDeClientesToolStripMenuItem.Text = "Listado de Clientes";
             // 
             // configuraciónToolStripMenuItem
