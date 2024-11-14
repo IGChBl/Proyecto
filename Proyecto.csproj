@@ -113,6 +113,7 @@
       <DependentUpon>frmGenerarFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Servicio.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="frmModificarDatosClientes.cs">
       <SubType>Form</SubType>

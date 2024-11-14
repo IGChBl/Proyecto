@@ -31,12 +31,12 @@
             this.cmbCliente = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvServicios = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGerenarFactura = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbCliente
@@ -44,7 +44,7 @@
             this.cmbCliente.FormattingEnabled = true;
             this.cmbCliente.Location = new System.Drawing.Point(191, 76);
             this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(121, 24);
+            this.cmbCliente.Size = new System.Drawing.Size(250, 24);
             this.cmbCliente.TabIndex = 0;
             // 
             // label1
@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Selecionar cliente";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -66,21 +65,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Seleccionar servicios";
             // 
-            // dataGridView1
+            // dgvServicios
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(191, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(190, 98);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvServicios.AllowUserToOrderColumns = true;
+            this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvServicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvServicios.Location = new System.Drawing.Point(191, 153);
+            this.dgvServicios.Name = "dgvServicios";
+            this.dgvServicios.RowHeadersWidth = 51;
+            this.dgvServicios.RowTemplate.Height = 24;
+            this.dgvServicios.Size = new System.Drawing.Size(392, 194);
+            this.dgvServicios.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 307);
+            this.label3.Location = new System.Drawing.Point(37, 390);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 4;
@@ -88,19 +89,20 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 301);
+            this.textBox1.Location = new System.Drawing.Point(191, 387);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 22);
+            this.textBox1.Size = new System.Drawing.Size(250, 22);
             this.textBox1.TabIndex = 5;
             // 
-            // button1
+            // btnGerenarFactura
             // 
-            this.button1.Location = new System.Drawing.Point(146, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Generar factura";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGerenarFactura.Location = new System.Drawing.Point(141, 478);
+            this.btnGerenarFactura.Name = "btnGerenarFactura";
+            this.btnGerenarFactura.Size = new System.Drawing.Size(134, 23);
+            this.btnGerenarFactura.TabIndex = 6;
+            this.btnGerenarFactura.Text = "Generar factura";
+            this.btnGerenarFactura.UseVisualStyleBackColor = true;
+            this.btnGerenarFactura.Click += new System.EventHandler(this.btnGenerarFactura);
             // 
             // label4
             // 
@@ -115,19 +117,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 469);
+            this.ClientSize = new System.Drawing.Size(875, 608);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGerenarFactura);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvServicios);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCliente);
             this.Name = "frmGenerarFactura";
             this.Text = "Generar_facturas";
             this.Load += new System.EventHandler(this.Generarfacturas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,10 +140,10 @@
         private System.Windows.Forms.ComboBox cmbCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvServicios;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGerenarFactura;
         private System.Windows.Forms.Label label4;
     }
 }
