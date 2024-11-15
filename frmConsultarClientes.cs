@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Consultar_clientes : Form
+    public partial class frmConsultarCliente: Form
     {
-        public Consultar_clientes()
+        public frmConsultarCliente()
         {
             InitializeComponent();
+        }
+
+        private void Consultar_clientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

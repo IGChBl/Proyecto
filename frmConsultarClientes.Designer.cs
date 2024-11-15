@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class Consultar_clientes
+    partial class frmConsultarCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -92,6 +92,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Consultar_clientes";
             this.Text = "Consultar_clientes";
+            this.Load += new System.EventHandler(this.Consultar_clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -44,5 +44,19 @@ namespace Proyecto
             frmHistorialFacturas historialFacturasForm = new frmHistorialFacturas();
             historialFacturasForm.Show();// muestra el formulario historial facturas
         }
+
+        private void modificarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmModificarDatosClientes modificarDatosClientesForm = new frmModificarDatosClientes();
+            modificarDatosClientesForm.Show(); // Abre el formulario 
+        }
+
+        private void consultarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultarCliente consultarClienteForm = new frmConsultarCliente();
+            consultarClienteForm.Show();
+        }
+
+       
     }
 }

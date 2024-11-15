@@ -61,5 +61,10 @@ namespace Proyecto
         {
             Application.Exit();
         }
+
+        private void frmInicioSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

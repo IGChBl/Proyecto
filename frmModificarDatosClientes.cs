@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Modificar_Datos_de_Clientes : Form
+    public partial class frmModificarDatosClientes : Form
     {
-        public Modificar_Datos_de_Clientes()
+        public frmModificarDatosClientes()
         {
             InitializeComponent();
+        }
+
+        private void Modificar_Datos_de_Clientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

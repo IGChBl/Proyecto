@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class Modificar_Datos_de_Clientes
+    partial class frmModificarDatosClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -171,6 +171,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Modificar_Datos_de_Clientes";
             this.Text = "Modificar_Datos_de_Clientes";
+            this.Load += new System.EventHandler(this.Modificar_Datos_de_Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -38,6 +38,9 @@
             this.agregarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darDeBajaAClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,7 +100,10 @@
             // 
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarClienteToolStripMenuItem,
-            this.listadoDeClientesToolStripMenuItem});
+            this.listadoDeClientesToolStripMenuItem,
+            this.modificarClientesToolStripMenuItem,
+            this.consultarClienteToolStripMenuItem,
+            this.darDeBajaAClienteToolStripMenuItem});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.clientesToolStripMenuItem.Text = "Clientes";
@@ -105,14 +111,14 @@
             // agregarClienteToolStripMenuItem
             // 
             this.agregarClienteToolStripMenuItem.Name = "agregarClienteToolStripMenuItem";
-            this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.agregarClienteToolStripMenuItem.Text = "Agregar Cliente";
             this.agregarClienteToolStripMenuItem.Click += new System.EventHandler(this.agregarClienteToolStripMenuItem_Click);
             // 
             // listadoDeClientesToolStripMenuItem
             // 
             this.listadoDeClientesToolStripMenuItem.Name = "listadoDeClientesToolStripMenuItem";
-            this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.listadoDeClientesToolStripMenuItem.Text = "Listado de Clientes";
             // 
             // configuraciónToolStripMenuItem
@@ -120,6 +126,22 @@
             this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
             this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.configuraciónToolStripMenuItem.Text = "Notificaciones";
+            // 
+            // modificarClientesToolStripMenuItem
+            // 
+            this.modificarClientesToolStripMenuItem.Name = "modificarClientesToolStripMenuItem";
+            this.modificarClientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.modificarClientesToolStripMenuItem.Text = "Modificar Clientes";
+            this.modificarClientesToolStripMenuItem.Click += new System.EventHandler(this.modificarClientesToolStripMenuItem_Click);
+            // 
+            // consultarClienteToolStripMenuItem
+            // 
+            this.consultarClienteToolStripMenuItem.Name = "consultarClienteToolStripMenuItem";
+            this.consultarClienteToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.consultarClienteToolStripMenuItem.Text = "Consultar Cliente";
+            this.consultarClienteToolStripMenuItem.Click += new System.EventHandler(this.consultarClienteToolStripMenuItem_Click);
+            // 
+            
             // 
             // frmMenuPrincipal
             // 
@@ -150,6 +172,9 @@
         private System.Windows.Forms.ToolStripMenuItem agregarClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoDeClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarClientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darDeBajaAClienteToolStripMenuItem;
     }
 }
 

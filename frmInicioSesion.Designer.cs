@@ -112,6 +112,7 @@
             this.Controls.Add(this.tbUser);
             this.Name = "frmInicioSesion";
             this.Text = "Inicio de Sesión";
+            this.Load += new System.EventHandler(this.frmInicioSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
