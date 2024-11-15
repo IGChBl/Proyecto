@@ -17,10 +17,6 @@ namespace Proyecto
         {
             InitializeComponent();
         }
-        public static class FacturaStorage
-        {
-            
-        }
         private void frmHistorialFacturas_Load(object sender, EventArgs e)
         {
             dgvHistorialFacturas.DataSource = null;

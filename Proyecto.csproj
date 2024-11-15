@@ -120,6 +120,7 @@
     </Compile>
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Factura.cs" />
+    <Compile Include="Models\FacturaStorage.cs" />
     <Compile Include="Models\Servicio.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="frmModificarDatosClientes.cs">
@@ -144,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetallesFactura.resx">
+      <DependentUpon>frmDetallesFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHistorialFacturas.resx">
       <DependentUpon>frmHistorialFacturas.cs</DependentUpon>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto.Models
 {
-    internal class Factura
+    public class Factura
     {
         public string Numero { get; set; }
         public string Cliente { get; set; }
