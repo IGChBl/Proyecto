@@ -57,6 +57,10 @@ namespace Proyecto
             consultarClienteForm.Show();
         }
 
-       
+        private void darDeBajaAClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DardeBajaClientes dardeBajaClientes = new DardeBajaClientes();
+            dardeBajaClientes.Show();
+        }
     }
 }

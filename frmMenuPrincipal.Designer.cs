@@ -37,10 +37,10 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaAClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,12 +121,6 @@
             this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.listadoDeClientesToolStripMenuItem.Text = "Listado de Clientes";
             // 
-            // configuraciónToolStripMenuItem
-            // 
-            this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
-            this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
-            this.configuraciónToolStripMenuItem.Text = "Notificaciones";
-            // 
             // modificarClientesToolStripMenuItem
             // 
             this.modificarClientesToolStripMenuItem.Name = "modificarClientesToolStripMenuItem";
@@ -137,11 +131,22 @@
             // consultarClienteToolStripMenuItem
             // 
             this.consultarClienteToolStripMenuItem.Name = "consultarClienteToolStripMenuItem";
-            this.consultarClienteToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.consultarClienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.consultarClienteToolStripMenuItem.Text = "Consultar Cliente";
             this.consultarClienteToolStripMenuItem.Click += new System.EventHandler(this.consultarClienteToolStripMenuItem_Click);
             // 
-            
+            // darDeBajaAClienteToolStripMenuItem
+            // 
+            this.darDeBajaAClienteToolStripMenuItem.Name = "darDeBajaAClienteToolStripMenuItem";
+            this.darDeBajaAClienteToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.darDeBajaAClienteToolStripMenuItem.Text = "Dar de baja a cliente";
+            this.darDeBajaAClienteToolStripMenuItem.Click += new System.EventHandler(this.darDeBajaAClienteToolStripMenuItem_Click);
+            // 
+            // configuraciónToolStripMenuItem
+            // 
+            this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
+            this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.configuraciónToolStripMenuItem.Text = "Notificaciones";
             // 
             // frmMenuPrincipal
             // 

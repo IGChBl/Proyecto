@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Dar_de_baja_a_clientes : Form
+    public partial class DardeBajaClientes : Form
     {
-        public Dar_de_baja_a_clientes()
+        public DardeBajaClientes()
         {
             InitializeComponent();
+        }
+
+        private void Dar_de_baja_a_clientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

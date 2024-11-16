@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class Dar_de_baja_a_clientes
+    partial class DardeBajaClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -101,6 +101,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Dar_de_baja_a_clientes";
             this.Text = "Dar_de_baja_a_clientes";
+            this.Load += new System.EventHandler(this.Dar_de_baja_a_clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
