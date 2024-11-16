@@ -62,5 +62,14 @@ namespace Proyecto
             DardeBajaClientes dardeBajaClientes = new DardeBajaClientes();
             dardeBajaClientes.Show();
         }
+
+        private void actualizarOEliminarFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Crea una instancia del formulario
+            ActualizaroEliminarFacturasErróneas formActualizarEliminar = new ActualizaroEliminarFacturasErróneas();
+
+            // Muestra el formulario
+            formActualizarEliminar.ShowDialog(); 
+        }
     }
 }

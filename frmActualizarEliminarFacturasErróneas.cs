@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Actualizar_o_Eliminar_Facturas_Erróneas : Form
+    public partial class ActualizaroEliminarFacturasErróneas : Form
     {
-        public Actualizar_o_Eliminar_Facturas_Erróneas()
+        public ActualizaroEliminarFacturasErróneas()
         {
             InitializeComponent();
+        }
+
+        private void Actualizar_o_Eliminar_Facturas_Erróneas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

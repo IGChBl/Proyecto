@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class Actualizar_o_Eliminar_Facturas_Erróneas
+    partial class ActualizaroEliminarFacturasErróneas
     {
         /// <summary>
         /// Required designer variable.
@@ -103,6 +103,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Actualizar_o_Eliminar_Facturas_Erróneas";
             this.Text = "Actualizar_o_Eliminar_Facturas_Erróneas";
+            this.Load += new System.EventHandler(this.Actualizar_o_Eliminar_Facturas_Erróneas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
