@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.dgvFacturas = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -46,40 +46,42 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar Facturas (Numero de factura o cliente)";
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(42, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtBuscar.Location = new System.Drawing.Point(42, 93);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(149, 22);
+            this.txtBuscar.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvFacturas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFacturas.Location = new System.Drawing.Point(42, 153);
+            this.dgvFacturas.Name = "dgvFacturas";
+            this.dgvFacturas.RowHeadersWidth = 51;
+            this.dgvFacturas.RowTemplate.Height = 24;
+            this.dgvFacturas.Size = new System.Drawing.Size(240, 150);
+            this.dgvFacturas.TabIndex = 2;
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.Location = new System.Drawing.Point(207, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscar.Location = new System.Drawing.Point(207, 93);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // button2
+            // btnActualizar
             // 
-            this.button2.Location = new System.Drawing.Point(42, 339);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Actualizar Factura";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnActualizar.Location = new System.Drawing.Point(42, 339);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(129, 23);
+            this.btnActualizar.TabIndex = 4;
+            this.btnActualizar.Text = "Actualizar Factura";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // button3
             // 
@@ -90,21 +92,21 @@
             this.button3.Text = "Eliminar Factura";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Actualizar_o_Eliminar_Facturas_Erróneas
+            // ActualizaroEliminarFacturasErróneas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 450);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.dgvFacturas);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
-            this.Name = "Actualizar_o_Eliminar_Facturas_Erróneas";
+            this.Name = "ActualizaroEliminarFacturasErróneas";
             this.Text = "Actualizar_o_Eliminar_Facturas_Erróneas";
             this.Load += new System.EventHandler(this.Actualizar_o_Eliminar_Facturas_Erróneas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,10 +115,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.DataGridView dgvFacturas;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button button3;
     }
 }

@@ -71,5 +71,11 @@ namespace Proyecto
             // Muestra el formulario
             formActualizarEliminar.ShowDialog(); 
         }
+
+        private void listadoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListadoClientes listadoClientesForm = new frmListadoClientes();
+            listadoClientesForm.ShowDialog(); // Mostrar el formulario
+        }
     }
 }

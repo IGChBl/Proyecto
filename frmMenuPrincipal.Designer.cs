@@ -34,6 +34,7 @@
             this.facturaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verHistorialDeFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarOEliminarFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +42,6 @@
             this.consultarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaAClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarOEliminarFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +98,13 @@
             this.verHistorialDeFacturasToolStripMenuItem.Text = "Ver Historial de Facturas";
             this.verHistorialDeFacturasToolStripMenuItem.Click += new System.EventHandler(this.verHistorialDeFacturasToolStripMenuItem_Click);
             // 
+            // actualizarOEliminarFacturasToolStripMenuItem
+            // 
+            this.actualizarOEliminarFacturasToolStripMenuItem.Name = "actualizarOEliminarFacturasToolStripMenuItem";
+            this.actualizarOEliminarFacturasToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.actualizarOEliminarFacturasToolStripMenuItem.Text = "Actualizar o Eliminar Facturas";
+            this.actualizarOEliminarFacturasToolStripMenuItem.Click += new System.EventHandler(this.actualizarOEliminarFacturasToolStripMenuItem_Click);
+            // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -122,6 +129,7 @@
             this.listadoDeClientesToolStripMenuItem.Name = "listadoDeClientesToolStripMenuItem";
             this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.listadoDeClientesToolStripMenuItem.Text = "Listado de Clientes";
+            this.listadoDeClientesToolStripMenuItem.Click += new System.EventHandler(this.listadoDeClientesToolStripMenuItem_Click);
             // 
             // modificarClientesToolStripMenuItem
             // 
@@ -149,13 +157,6 @@
             this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
             this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.configuraciónToolStripMenuItem.Text = "Notificaciones";
-            // 
-            // actualizarOEliminarFacturasToolStripMenuItem
-            // 
-            this.actualizarOEliminarFacturasToolStripMenuItem.Name = "actualizarOEliminarFacturasToolStripMenuItem";
-            this.actualizarOEliminarFacturasToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.actualizarOEliminarFacturasToolStripMenuItem.Text = "Actualizar o Eliminar Facturas";
-            this.actualizarOEliminarFacturasToolStripMenuItem.Click += new System.EventHandler(this.actualizarOEliminarFacturasToolStripMenuItem_Click);
             // 
             // frmMenuPrincipal
             // 

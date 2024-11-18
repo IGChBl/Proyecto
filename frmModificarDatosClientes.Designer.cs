@@ -151,7 +151,7 @@
             this.button2.Text = "Modificar Cliente";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Modificar_Datos_de_Clientes
+            // frmModificarDatosClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,8 +169,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Modificar_Datos_de_Clientes";
-            this.Text = "Modificar_Datos_de_Clientes";
+            this.Name = "frmModificarDatosClientes";
+            this.Text = "Modificar Datos de Clientes";
             this.Load += new System.EventHandler(this.Modificar_Datos_de_Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

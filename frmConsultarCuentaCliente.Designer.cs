@@ -111,7 +111,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Consultar_Estados_de_Cuentas_de_los_Clientes";
-            this.Text = "Consultar_Estados_de_Cuentas_de_los_Clientes";
+            this.Text = "Consultar Estado de Cuenta de los Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
