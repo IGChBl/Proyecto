@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class ActualizaroEliminarFacturasErróneas
+    partial class frmActualizarEliminarFacturaErronea
     {
         /// <summary>
         /// Required designer variable.
@@ -92,7 +92,7 @@
             this.button3.Text = "Eliminar Factura";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // ActualizaroEliminarFacturasErróneas
+            // frmActualizarEliminarFacturaErronea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,8 +103,8 @@
             this.Controls.Add(this.dgvFacturas);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
-            this.Name = "ActualizaroEliminarFacturasErróneas";
-            this.Text = "Actualizar_o_Eliminar_Facturas_Erróneas";
+            this.Name = "frmActualizarEliminarFacturaErronea";
+            this.Text = "Actualizar Factura Errónea";
             this.Load += new System.EventHandler(this.Actualizar_o_Eliminar_Facturas_Erróneas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
             this.ResumeLayout(false);

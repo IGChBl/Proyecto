@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class ActualizaroEliminarFacturasErróneas : Form
+    public partial class frmActualizarEliminarFacturaErronea : Form
     {
-        public ActualizaroEliminarFacturasErróneas()
+        public frmActualizarEliminarFacturaErronea()
         {
             InitializeComponent();
         }

@@ -66,7 +66,7 @@ namespace Proyecto
         private void actualizarOEliminarFacturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Crea una instancia del formulario
-            ActualizaroEliminarFacturasErróneas formActualizarEliminar = new ActualizaroEliminarFacturasErróneas();
+            frmActualizarEliminarFacturaErronea formActualizarEliminar = new frmActualizarEliminarFacturaErronea();
 
             // Muestra el formulario
             formActualizarEliminar.ShowDialog(); 
