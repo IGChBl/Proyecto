@@ -46,76 +46,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmActualizarEliminarFacturasErróneas.cs">
+    <Compile Include="Forms\frmActualizarEliminarFacturasErróneas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmActualizarEliminarFacturasErróneas.Designer.cs">
+    <Compile Include="Forms\frmActualizarEliminarFacturasErróneas.Designer.cs">
       <DependentUpon>frmActualizarEliminarFacturasErróneas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultarClientes.cs">
+    <Compile Include="Forms\frmConsultarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultarClientes.Designer.cs">
+    <Compile Include="Forms\frmConsultarClientes.Designer.cs">
       <DependentUpon>frmConsultarClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultarCuentaCliente.cs">
+    <Compile Include="Forms\frmConsultarCuentaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultarCuentaCliente.Designer.cs">
+    <Compile Include="Forms\frmConsultarCuentaCliente.Designer.cs">
       <DependentUpon>frmConsultarCuentaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDarBajaClientes.cs">
+    <Compile Include="Forms\frmDarBajaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDarBajaClientes.Designer.cs">
+    <Compile Include="Forms\frmDarBajaClientes.Designer.cs">
       <DependentUpon>frmDarBajaClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarCliente.cs">
+    <Compile Include="Forms\frmAgregarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarCliente.Designer.cs">
+    <Compile Include="Forms\frmAgregarCliente.Designer.cs">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDetallesFactura.cs">
+    <Compile Include="Forms\frmDetallesFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDetallesFactura.Designer.cs">
+    <Compile Include="Forms\frmDetallesFactura.Designer.cs">
       <DependentUpon>frmDetallesFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInicioSesion.cs">
+    <Compile Include="Forms\frmInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInicioSesion.Designer.cs">
+    <Compile Include="Forms\frmInicioSesion.Designer.cs">
       <DependentUpon>frmInicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNotificaciones.cs">
+    <Compile Include="Forms\frmNotificaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNotificaciones.Designer.cs">
+    <Compile Include="Forms\frmNotificaciones.Designer.cs">
       <DependentUpon>frmNotificaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHistorialFacturas.cs">
+    <Compile Include="Forms\frmHistorialFacturas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHistorialFacturas.Designer.cs">
+    <Compile Include="Forms\frmHistorialFacturas.Designer.cs">
       <DependentUpon>frmHistorialFacturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListadoClientes.cs">
+    <Compile Include="Forms\frmListadoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListadoClientes.Designer.cs">
+    <Compile Include="Forms\frmListadoClientes.Designer.cs">
       <DependentUpon>frmListadoClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMenuPrincipal.cs">
+    <Compile Include="Forms\frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuPrincipal.Designer.cs">
+    <Compile Include="Forms\frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGenerarFactura.cs">
+    <Compile Include="Forms\frmGenerarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGenerarFactura.Designer.cs">
+    <Compile Include="Forms\frmGenerarFactura.Designer.cs">
       <DependentUpon>frmGenerarFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Cliente.cs" />
@@ -123,48 +123,48 @@
     <Compile Include="Models\FacturaStorage.cs" />
     <Compile Include="Models\Servicio.cs" />
     <Compile Include="Models\Usuario.cs" />
-    <Compile Include="frmModificarDatosClientes.cs">
+    <Compile Include="Forms\frmModificarDatosClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmModificarDatosClientes.Designer.cs">
+    <Compile Include="Forms\frmModificarDatosClientes.Designer.cs">
       <DependentUpon>frmModificarDatosClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmActualizarEliminarFacturasErróneas.resx">
+    <EmbeddedResource Include="Forms\frmActualizarEliminarFacturasErróneas.resx">
       <DependentUpon>frmActualizarEliminarFacturasErróneas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultarClientes.resx">
+    <EmbeddedResource Include="Forms\frmConsultarClientes.resx">
       <DependentUpon>frmConsultarClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultarCuentaCliente.resx">
+    <EmbeddedResource Include="Forms\frmConsultarCuentaCliente.resx">
       <DependentUpon>frmConsultarCuentaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDarBajaClientes.resx">
+    <EmbeddedResource Include="Forms\frmDarBajaClientes.resx">
       <DependentUpon>frmDarBajaClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarCliente.resx">
+    <EmbeddedResource Include="Forms\frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDetallesFactura.resx">
+    <EmbeddedResource Include="Forms\frmDetallesFactura.resx">
       <DependentUpon>frmDetallesFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHistorialFacturas.resx">
+    <EmbeddedResource Include="Forms\frmHistorialFacturas.resx">
       <DependentUpon>frmHistorialFacturas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInicioSesion.resx">
+    <EmbeddedResource Include="Forms\frmInicioSesion.resx">
       <DependentUpon>frmInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListadoClientes.resx">
+    <EmbeddedResource Include="Forms\frmListadoClientes.resx">
       <DependentUpon>frmListadoClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenuPrincipal.resx">
+    <EmbeddedResource Include="Forms\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGenerarFactura.resx">
+    <EmbeddedResource Include="Forms\frmGenerarFactura.resx">
       <DependentUpon>frmGenerarFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmModificarDatosClientes.resx">
+    <EmbeddedResource Include="Forms\frmModificarDatosClientes.resx">
       <DependentUpon>frmModificarDatosClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

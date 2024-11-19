@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto.Models;
+using Proyecto.Forms;
 
-namespace Proyecto
+namespace Proyecto.Forms
 {
     public partial class frmInicioSesion : Form
     {

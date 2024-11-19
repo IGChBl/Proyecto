@@ -1,4 +1,4 @@
-﻿namespace Proyecto
+﻿namespace Proyecto.Forms
 {
     partial class frmInicioSesion
     {
