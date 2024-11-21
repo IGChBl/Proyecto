@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHistorialFacturas));
             this.dgvHistorialFacturas = new System.Windows.Forms.DataGridView();
             this.btnVerDetalles = new System.Windows.Forms.Button();
             this.btnElimiarFactura = new System.Windows.Forms.Button();
@@ -72,8 +73,10 @@
             this.Controls.Add(this.btnElimiarFactura);
             this.Controls.Add(this.btnVerDetalles);
             this.Controls.Add(this.dgvHistorialFacturas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHistorialFacturas";
             this.Text = "Historial de Facturas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHistorialFacturas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialFacturas)).EndInit();
             this.ResumeLayout(false);

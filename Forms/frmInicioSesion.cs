@@ -23,6 +23,7 @@ namespace Proyecto.Forms
         public frmInicioSesion()
         {
             InitializeComponent();
+            this.Icon = new Icon(@"Resources\CornIslandTV.ico");
         }
 
         // Método para validar usuario y contraseña
