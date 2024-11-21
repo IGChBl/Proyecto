@@ -129,7 +129,7 @@
             this.Controls.Add(this.tbCliente);
             this.Controls.Add(this.lblCliente);
             this.Name = "frmDetallesFactura";
-            this.Text = "frmDetallesFactura";
+            this.Text = "Detalles Factura";
             this.Load += new System.EventHandler(this.frmDetallesFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
             this.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace Proyecto
 {
-    partial class DardeBajaClientes
+    partial class frmDarBajaCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -88,7 +88,7 @@
             this.textBox1.Size = new System.Drawing.Size(170, 22);
             this.textBox1.TabIndex = 5;
             // 
-            // Dar_de_baja_a_clientes
+            // frmDarBajaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,8 +99,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Dar_de_baja_a_clientes";
-            this.Text = "Dar_de_baja_a_clientes";
+            this.Name = "frmDarBajaCliente";
+            this.Text = "Dar de Baja a Cliente";
             this.Load += new System.EventHandler(this.Dar_de_baja_a_clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

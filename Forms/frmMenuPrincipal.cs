@@ -59,7 +59,7 @@ namespace Proyecto
 
         private void darDeBajaAClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DardeBajaClientes dardeBajaClientes = new DardeBajaClientes();
+            frmDarBajaCliente dardeBajaClientes = new frmDarBajaCliente();
             dardeBajaClientes.Show();
         }
 

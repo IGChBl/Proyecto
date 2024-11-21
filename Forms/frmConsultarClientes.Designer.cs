@@ -80,7 +80,7 @@
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Consultar_clientes
+            // frmConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,8 +90,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Consultar_clientes";
-            this.Text = "Consultar_clientes";
+            this.Name = "frmConsultarCliente";
+            this.Text = "Consultar Clientes";
             this.Load += new System.EventHandler(this.Consultar_clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

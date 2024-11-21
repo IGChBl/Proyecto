@@ -127,7 +127,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCliente);
             this.Name = "frmGenerarFactura";
-            this.Text = "Generar_facturas";
+            this.Text = "Generar Facturas";
             this.Load += new System.EventHandler(this.Generarfacturas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
             this.ResumeLayout(false);
