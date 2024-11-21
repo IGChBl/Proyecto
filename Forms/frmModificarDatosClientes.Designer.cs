@@ -173,6 +173,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmModificarDatosClientes";
             this.Text = "Modificar Datos de Clientes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Modificar_Datos_de_Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

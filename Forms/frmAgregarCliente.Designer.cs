@@ -151,6 +151,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAgregarCliente";
             this.Text = "Agregar Clientes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmAgregarCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

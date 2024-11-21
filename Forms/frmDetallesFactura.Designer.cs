@@ -132,6 +132,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDetallesFactura";
             this.Text = "Detalles Factura";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmDetallesFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
             this.ResumeLayout(false);

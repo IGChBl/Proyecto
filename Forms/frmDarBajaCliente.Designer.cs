@@ -103,6 +103,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDarBajaCliente";
             this.Text = "Dar de Baja a Cliente";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dar_de_baja_a_clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
