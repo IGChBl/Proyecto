@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDetallesFactura));
             this.lblCliente = new System.Windows.Forms.Label();
             this.tbCliente = new System.Windows.Forms.TextBox();
             this.tbFecha = new System.Windows.Forms.TextBox();
@@ -128,6 +129,7 @@
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.tbCliente);
             this.Controls.Add(this.lblCliente);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDetallesFactura";
             this.Text = "Detalles Factura";
             this.Load += new System.EventHandler(this.frmDetallesFactura_Load);
