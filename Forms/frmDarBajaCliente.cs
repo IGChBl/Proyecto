@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class DardeBajaClientes : Form
+    public partial class frmDarBajaCliente : Form
     {
-        public DardeBajaClientes()
+        public frmDarBajaCliente()
         {
             InitializeComponent();
         }
