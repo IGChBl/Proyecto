@@ -37,6 +37,9 @@
             // 
             // dgvHistorialFacturas
             // 
+            this.dgvHistorialFacturas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvHistorialFacturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHistorialFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHistorialFacturas.Location = new System.Drawing.Point(166, 41);
@@ -48,6 +51,7 @@
             // 
             // btnVerDetalles
             // 
+            this.btnVerDetalles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnVerDetalles.Location = new System.Drawing.Point(166, 369);
             this.btnVerDetalles.Name = "btnVerDetalles";
             this.btnVerDetalles.Size = new System.Drawing.Size(116, 23);
@@ -58,6 +62,7 @@
             // 
             // btnElimiarFactura
             // 
+            this.btnElimiarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnElimiarFactura.Location = new System.Drawing.Point(504, 369);
             this.btnElimiarFactura.Name = "btnElimiarFactura";
             this.btnElimiarFactura.Size = new System.Drawing.Size(131, 23);
