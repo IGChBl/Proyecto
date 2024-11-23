@@ -59,6 +59,8 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(27, 150);
             this.label2.Name = "label2";
@@ -69,6 +71,8 @@
             // dgvServicios
             // 
             this.dgvServicios.AllowUserToOrderColumns = true;
+            this.dgvServicios.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvServicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -76,13 +80,14 @@
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.RowHeadersWidth = 51;
             this.dgvServicios.RowTemplate.Height = 24;
-            this.dgvServicios.Size = new System.Drawing.Size(392, 194);
+            this.dgvServicios.Size = new System.Drawing.Size(392, 140);
             this.dgvServicios.TabIndex = 3;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 390);
+            this.label3.Location = new System.Drawing.Point(27, 347);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 4;
@@ -90,14 +95,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 387);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.Location = new System.Drawing.Point(191, 347);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 22);
             this.textBox1.TabIndex = 5;
             // 
             // btnGerenarFactura
             // 
-            this.btnGerenarFactura.Location = new System.Drawing.Point(141, 478);
+            this.btnGerenarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGerenarFactura.Location = new System.Drawing.Point(481, 344);
             this.btnGerenarFactura.Name = "btnGerenarFactura";
             this.btnGerenarFactura.Size = new System.Drawing.Size(134, 23);
             this.btnGerenarFactura.TabIndex = 6;
@@ -107,10 +114,12 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 24);
+            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(305, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 16);
+            this.label4.Size = new System.Drawing.Size(237, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Generar nueva factura";
             // 

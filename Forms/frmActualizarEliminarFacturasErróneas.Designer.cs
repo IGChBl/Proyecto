@@ -35,29 +35,35 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 64);
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(58, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 16);
+            this.label1.Size = new System.Drawing.Size(483, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar Facturas (Numero de factura o cliente)";
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(42, 93);
+            this.txtBuscar.Location = new System.Drawing.Point(49, 110);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(149, 22);
             this.txtBuscar.TabIndex = 1;
             // 
             // dgvFacturas
             // 
+            this.dgvFacturas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturas.Location = new System.Drawing.Point(42, 153);
+            this.dgvFacturas.Location = new System.Drawing.Point(142, 183);
             this.dgvFacturas.Name = "dgvFacturas";
             this.dgvFacturas.RowHeadersWidth = 51;
             this.dgvFacturas.RowTemplate.Height = 24;
@@ -66,7 +72,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(207, 93);
+            this.btnBuscar.Location = new System.Drawing.Point(240, 109);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 3;
@@ -76,7 +82,8 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(42, 339);
+            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnActualizar.Location = new System.Drawing.Point(49, 350);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(129, 23);
             this.btnActualizar.TabIndex = 4;
@@ -86,18 +93,29 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(207, 339);
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(335, 350);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(124, 23);
             this.button3.TabIndex = 5;
             this.button3.Text = "Eliminar Factura";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(309, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Ingresese Numero de factura o Nombre del Cliente";
+            // 
             // frmActualizarEliminarFacturaErronea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnBuscar);
@@ -123,5 +141,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label2;
     }
 }
