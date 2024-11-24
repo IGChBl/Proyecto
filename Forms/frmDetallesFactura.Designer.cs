@@ -54,14 +54,14 @@
             // 
             this.tbCliente.Location = new System.Drawing.Point(178, 30);
             this.tbCliente.Name = "tbCliente";
-            this.tbCliente.Size = new System.Drawing.Size(100, 22);
+            this.tbCliente.Size = new System.Drawing.Size(153, 22);
             this.tbCliente.TabIndex = 1;
             // 
             // tbFecha
             // 
             this.tbFecha.Location = new System.Drawing.Point(178, 89);
             this.tbFecha.Name = "tbFecha";
-            this.tbFecha.Size = new System.Drawing.Size(100, 22);
+            this.tbFecha.Size = new System.Drawing.Size(153, 22);
             this.tbFecha.TabIndex = 3;
             // 
             // lblFecha
@@ -77,7 +77,7 @@
             // 
             this.tbNumeroFactura.Location = new System.Drawing.Point(178, 153);
             this.tbNumeroFactura.Name = "tbNumeroFactura";
-            this.tbNumeroFactura.Size = new System.Drawing.Size(100, 22);
+            this.tbNumeroFactura.Size = new System.Drawing.Size(153, 22);
             this.tbNumeroFactura.TabIndex = 5;
             // 
             // lblNumeroFactura
@@ -93,7 +93,7 @@
             // 
             this.tbTotal.Location = new System.Drawing.Point(178, 216);
             this.tbTotal.Name = "tbTotal";
-            this.tbTotal.Size = new System.Drawing.Size(100, 22);
+            this.tbTotal.Size = new System.Drawing.Size(153, 22);
             this.tbTotal.TabIndex = 7;
             // 
             // lblTotal

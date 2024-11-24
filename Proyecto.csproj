@@ -52,6 +52,12 @@
     <Compile Include="Forms\frmActualizarEliminarFacturasErróneas.Designer.cs">
       <DependentUpon>frmActualizarEliminarFacturasErróneas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmActualizarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActualizarFactura.Designer.cs">
+      <DependentUpon>frmActualizarFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmConsultarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmActualizarEliminarFacturasErróneas.resx">
       <DependentUpon>frmActualizarEliminarFacturasErróneas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActualizarFactura.resx">
+      <DependentUpon>frmActualizarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgregarCliente.aa-ER.resx">
+      <DependentUpon>frmAgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgregarCliente.aa.resx">
+      <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmConsultarClientes.resx">
       <DependentUpon>frmConsultarClientes.cs</DependentUpon>

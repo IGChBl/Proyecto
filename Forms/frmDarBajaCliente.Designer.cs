@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCriterioBusqueda = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -71,15 +71,15 @@
             this.label3.TabIndex = 2;
             this.label3.Text = " ¿Está seguro que desea dar de baja a este cliente?";
             // 
-            // button1
+            // btnBuscarCliente
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Location = new System.Drawing.Point(504, 103);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Buscar cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscarCliente.Location = new System.Drawing.Point(504, 103);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(112, 23);
+            this.btnBuscarCliente.TabIndex = 3;
+            this.btnBuscarCliente.Text = "Buscar cliente";
+            this.btnBuscarCliente.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -91,23 +91,23 @@
             this.button2.Text = "Dar de baja";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtCriterioBusqueda
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCriterioBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(266, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtCriterioBusqueda.Location = new System.Drawing.Point(266, 104);
+            this.txtCriterioBusqueda.Name = "txtCriterioBusqueda";
+            this.txtCriterioBusqueda.Size = new System.Drawing.Size(170, 22);
+            this.txtCriterioBusqueda.TabIndex = 5;
             // 
             // frmDarBajaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCriterioBusqueda);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscarCliente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -126,8 +126,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCriterioBusqueda;
     }
 }
