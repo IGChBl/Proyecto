@@ -33,6 +33,7 @@
             this.dgvServicios = new System.Windows.Forms.DataGridView();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,12 +58,12 @@
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.RowHeadersWidth = 51;
             this.dgvServicios.RowTemplate.Height = 24;
-            this.dgvServicios.Size = new System.Drawing.Size(393, 150);
+            this.dgvServicios.Size = new System.Drawing.Size(500, 300);
             this.dgvServicios.TabIndex = 2;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(348, 365);
+            this.btnGuardar.Location = new System.Drawing.Point(51, 331);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 3;
@@ -81,11 +82,22 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Actualizar Facturas";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(51, 360);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmActualizarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dgvServicios);
@@ -107,5 +119,6 @@
         private System.Windows.Forms.DataGridView dgvServicios;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

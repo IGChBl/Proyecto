@@ -101,5 +101,10 @@ namespace Proyecto
                 MessageBox.Show("Seleccione una factura para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+        }
     }
 }

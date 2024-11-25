@@ -35,6 +35,7 @@
             this.dgvServicios = new System.Windows.Forms.DataGridView();
             this.btnGerenarFactura = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 208);
+            this.label2.Location = new System.Drawing.Point(29, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 16);
             this.label2.TabIndex = 2;
@@ -74,17 +75,17 @@
             this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvServicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicios.Location = new System.Drawing.Point(57, 227);
+            this.dgvServicios.Location = new System.Drawing.Point(32, 227);
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.RowHeadersWidth = 51;
             this.dgvServicios.RowTemplate.Height = 24;
-            this.dgvServicios.Size = new System.Drawing.Size(397, 140);
+            this.dgvServicios.Size = new System.Drawing.Size(500, 275);
             this.dgvServicios.TabIndex = 3;
             // 
             // btnGerenarFactura
             // 
             this.btnGerenarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerenarFactura.Location = new System.Drawing.Point(116, 432);
+            this.btnGerenarFactura.Location = new System.Drawing.Point(538, 479);
             this.btnGerenarFactura.Name = "btnGerenarFactura";
             this.btnGerenarFactura.Size = new System.Drawing.Size(134, 23);
             this.btnGerenarFactura.TabIndex = 6;
@@ -103,11 +104,23 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Generar nueva factura";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.Location = new System.Drawing.Point(692, 479);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmGenerarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 608);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGerenarFactura);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -133,5 +146,6 @@
         private System.Windows.Forms.DataGridView dgvServicios;
         private System.Windows.Forms.Button btnGerenarFactura;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

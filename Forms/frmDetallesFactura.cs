@@ -59,5 +59,10 @@ namespace Proyecto
             // Establecer los servicios como fuente de datos para el DataGridView
             dgvServicios.DataSource = factura.Servicios;
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

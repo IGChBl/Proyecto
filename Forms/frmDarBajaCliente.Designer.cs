@@ -35,6 +35,7 @@
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.txtCriterioBusqueda = new System.Windows.Forms.TextBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,11 +101,22 @@
             this.txtCriterioBusqueda.Size = new System.Drawing.Size(170, 22);
             this.txtCriterioBusqueda.TabIndex = 5;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(487, 232);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmDarBajaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 450);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtCriterioBusqueda);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBuscarCliente);
@@ -129,5 +141,6 @@
         private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtCriterioBusqueda;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

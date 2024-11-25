@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static Proyecto.frmAgregarCliente;
 using Proyecto.Models;
 using static Proyecto.frmHistorialFacturas;
+using System.IO;
 
 namespace Proyecto
 {
@@ -20,16 +21,61 @@ namespace Proyecto
             new Servicio { Nombre = "Internet Básico", Precio = 20.00m },
             new Servicio { Nombre = "Internet Avanzado", Precio = 35.00m },
             new Servicio { Nombre = "Televisión Básica", Precio = 15.00m },
-            new Servicio { Nombre = "Televisión Avanzada", Precio = 25.00m }
+            new Servicio { Nombre = "Televisión Avanzada", Precio = 25.00m },
+            new Servicio { Nombre = "Streaming Premium", Precio = 30.00m },
+            new Servicio { Nombre = "Telefonía Básica", Precio = 10.00m },
+            new Servicio { Nombre = "Telefonía Ilimitada", Precio = 20.00m },
+            new Servicio { Nombre = "Paquete Familiar", Precio = 50.00m },
+            new Servicio { Nombre = "Internet + TV Avanzada", Precio = 55.00m },
+            new Servicio { Nombre = "Servicio Técnico", Precio = 5.00m },
+            new Servicio { Nombre = "Canales Deportivos", Precio = 12.00m }
         };
 
         public frmGenerarFactura()
         {
             InitializeComponent();
         }
+        private void CargarArchivo()
+        {
+            ClienteData.Clientes.Clear();
+            string rutaArchivo = "clientes.dat";
+            if (!File.Exists(rutaArchivo))
+            {
+                return;
+            }
 
+            using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Open, FileAccess.Read))
+            {
+                using (BinaryReader lector = new BinaryReader(archivo))
+                {
+                    while (archivo.Position != archivo.Length)
+                    {
+                        //int id = lector.ReadInt32();
+                        // int tamaño = lector.ReadInt32();
+                        //char[] nombreArray = lector.ReadChars(tamaño);
+                        string nombre = lector.ReadString();
+                        string apellido = lector.ReadString();
+                        string telefono = lector.ReadString();
+                        string email = lector.ReadString();
+                        string direccion = lector.ReadString();
+
+                        //int poblacion = lector.ReadInt32();
+
+                        Cliente cliente = new Cliente();
+                        cliente.Nombre = nombre;
+                        cliente.Apellido = apellido;
+                        cliente.Telefono = telefono;
+                        cliente.Email = email;
+                        cliente.Direccion = direccion;
+
+                        ClienteData.Clientes.Add(cliente);
+                    }
+                }
+            }
+        }
         private void Generarfacturas_Load(object sender, EventArgs e)
         {
+            CargarArchivo();
             // Cargar los clientes en el ComboBox
             cmbCliente.DataSource = null;
             cmbCliente.DataSource = ClienteData.Clientes;
@@ -133,6 +179,12 @@ namespace Proyecto
             // Opcional: Abrir el archivo automáticamente
             System.Diagnostics.Process.Start("notepad.exe", rutaFactura);
 
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
 
         }
     }

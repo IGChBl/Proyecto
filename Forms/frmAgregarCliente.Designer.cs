@@ -41,6 +41,7 @@
             this.tbTelefono = new System.Windows.Forms.TextBox();
             this.btnGuardarCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -105,10 +106,18 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // btnSalir
+            // 
+            resources.ApplyResources(this.btnSalir, "btnSalir");
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmAgregarCliente
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGuardarCliente);
             this.Controls.Add(this.tbTelefono);
@@ -144,5 +153,6 @@
         private System.Windows.Forms.TextBox tbTelefono;
         private System.Windows.Forms.Button btnGuardarCliente;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

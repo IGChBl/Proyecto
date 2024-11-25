@@ -32,6 +32,7 @@
             this.dgvHistorialFacturas = new System.Windows.Forms.DataGridView();
             this.btnVerDetalles = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialFacturas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,13 +47,13 @@
             this.dgvHistorialFacturas.Name = "dgvHistorialFacturas";
             this.dgvHistorialFacturas.RowHeadersWidth = 51;
             this.dgvHistorialFacturas.RowTemplate.Height = 24;
-            this.dgvHistorialFacturas.Size = new System.Drawing.Size(469, 292);
+            this.dgvHistorialFacturas.Size = new System.Drawing.Size(500, 282);
             this.dgvHistorialFacturas.TabIndex = 0;
             // 
             // btnVerDetalles
             // 
             this.btnVerDetalles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnVerDetalles.Location = new System.Drawing.Point(334, 372);
+            this.btnVerDetalles.Location = new System.Drawing.Point(600, 450);
             this.btnVerDetalles.Name = "btnVerDetalles";
             this.btnVerDetalles.Size = new System.Drawing.Size(116, 23);
             this.btnVerDetalles.TabIndex = 1;
@@ -71,11 +72,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Historial de Facturas";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.Location = new System.Drawing.Point(600, 450);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmHistorialFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVerDetalles);
             this.Controls.Add(this.dgvHistorialFacturas);
@@ -95,5 +108,6 @@
         private System.Windows.Forms.DataGridView dgvHistorialFacturas;
         private System.Windows.Forms.Button btnVerDetalles;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

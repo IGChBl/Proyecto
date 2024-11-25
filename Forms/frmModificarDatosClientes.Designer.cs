@@ -35,13 +35,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtCriterioBusqueda = new System.Windows.Forms.TextBox();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.btnModificarCliente = new System.Windows.Forms.Button();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -72,7 +74,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 236);
+            this.label3.Location = new System.Drawing.Point(48, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 2;
@@ -83,7 +85,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 278);
+            this.label4.Location = new System.Drawing.Point(47, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 3;
@@ -94,7 +96,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(64, 325);
+            this.label5.Location = new System.Drawing.Point(47, 334);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 16);
             this.label5.TabIndex = 4;
@@ -105,89 +107,111 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(64, 369);
+            this.label6.Location = new System.Drawing.Point(47, 384);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "Telefono";
             // 
-            // textBox1
+            // txtCriterioBusqueda
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCriterioBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(257, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 22);
-            this.textBox1.TabIndex = 6;
+            this.txtCriterioBusqueda.Location = new System.Drawing.Point(257, 107);
+            this.txtCriterioBusqueda.Name = "txtCriterioBusqueda";
+            this.txtCriterioBusqueda.Size = new System.Drawing.Size(221, 22);
+            this.txtCriterioBusqueda.TabIndex = 6;
             // 
-            // button1
+            // btnBuscarCliente
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Location = new System.Drawing.Point(257, 168);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Buscar cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscarCliente.Location = new System.Drawing.Point(267, 135);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(113, 23);
+            this.btnBuscarCliente.TabIndex = 7;
+            this.btnBuscarCliente.Text = "Buscar cliente";
+            this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(196, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 22);
-            this.textBox2.TabIndex = 8;
+            this.txtNombre.Location = new System.Drawing.Point(180, 194);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(221, 22);
+            this.txtNombre.TabIndex = 8;
             // 
-            // textBox3
+            // txtDireccion
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(196, 272);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(221, 22);
-            this.textBox3.TabIndex = 9;
+            this.txtDireccion.Location = new System.Drawing.Point(180, 282);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(221, 22);
+            this.txtDireccion.TabIndex = 9;
             // 
-            // textBox4
+            // txtCorreo
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(196, 322);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(221, 22);
-            this.textBox4.TabIndex = 10;
+            this.txtCorreo.Location = new System.Drawing.Point(180, 328);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(221, 22);
+            this.txtCorreo.TabIndex = 10;
             // 
-            // textBox5
+            // txtTelefono
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(196, 363);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(221, 22);
-            this.textBox5.TabIndex = 11;
+            this.txtTelefono.Location = new System.Drawing.Point(180, 381);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(221, 22);
+            this.txtTelefono.TabIndex = 11;
             // 
-            // button2
+            // btnModificarCliente
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Location = new System.Drawing.Point(196, 419);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Modificar Cliente";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnModificarCliente.Location = new System.Drawing.Point(211, 446);
+            this.btnModificarCliente.Name = "btnModificarCliente";
+            this.btnModificarCliente.Size = new System.Drawing.Size(159, 23);
+            this.btnModificarCliente.TabIndex = 12;
+            this.btnModificarCliente.Text = "Modificar Cliente";
+            this.btnModificarCliente.UseVisualStyleBackColor = true;
+            this.btnModificarCliente.Click += new System.EventHandler(this.btnModificarCliente_Click);
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(47, 238);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(57, 16);
+            this.lblApellido.TabIndex = 13;
+            this.lblApellido.Text = "Apellido";
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtApellido.Location = new System.Drawing.Point(180, 238);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(221, 22);
+            this.txtApellido.TabIndex = 14;
             // 
             // frmModificarDatosClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 490);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.lblApellido);
+            this.Controls.Add(this.btnModificarCliente);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.btnBuscarCliente);
+            this.Controls.Add(this.txtCriterioBusqueda);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -198,7 +222,6 @@
             this.Name = "frmModificarDatosClientes";
             this.Text = "Modificar Datos de Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Modificar_Datos_de_Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,12 +235,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtCriterioBusqueda;
+        private System.Windows.Forms.Button btnBuscarCliente;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Button btnModificarCliente;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.TextBox txtApellido;
     }
 }

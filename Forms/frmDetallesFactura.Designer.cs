@@ -38,6 +38,7 @@
             this.tbTotal = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.dgvServicios = new System.Windows.Forms.DataGridView();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,14 +113,25 @@
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.RowHeadersWidth = 51;
             this.dgvServicios.RowTemplate.Height = 24;
-            this.dgvServicios.Size = new System.Drawing.Size(629, 413);
+            this.dgvServicios.Size = new System.Drawing.Size(500, 300);
             this.dgvServicios.TabIndex = 8;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(57, 310);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 9;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmDetallesFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 499);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvServicios);
             this.Controls.Add(this.tbTotal);
             this.Controls.Add(this.lblTotal);
@@ -151,5 +163,6 @@
         private System.Windows.Forms.TextBox tbTotal;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.DataGridView dgvServicios;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

@@ -17,6 +17,7 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
         private void frmHistorialFacturas_Load(object sender, EventArgs e)
         {
             dgvHistorialFacturas.DataSource = null;
@@ -50,6 +51,11 @@ namespace Proyecto
             {
                 MessageBox.Show("Seleccione una factura para ver los detalles.");
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
