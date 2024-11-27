@@ -74,11 +74,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(156, 218);
+            this.dataGridView1.Location = new System.Drawing.Point(122, 205);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+<<<<<<< Updated upstream
             this.dataGridView1.Size = new System.Drawing.Size(393, 150);
+=======
+            this.dataGridView1.Size = new System.Drawing.Size(500, 441);
+>>>>>>> Stashed changes
             this.dataGridView1.TabIndex = 4;
             // 
             // button1
@@ -91,11 +95,29 @@
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
             // 
+<<<<<<< Updated upstream
+=======
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(627, 687);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+>>>>>>> Stashed changes
             // frmConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< Updated upstream
             this.ClientSize = new System.Drawing.Size(737, 450);
+=======
+            this.ClientSize = new System.Drawing.Size(737, 738);
+            this.Controls.Add(this.btnSalir);
+>>>>>>> Stashed changes
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);

@@ -111,6 +111,19 @@
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 6;
             // 
+<<<<<<< Updated upstream
+=======
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(305, 217);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 7;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+>>>>>>> Stashed changes
             // Consultar_Estados_de_Cuentas_de_los_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

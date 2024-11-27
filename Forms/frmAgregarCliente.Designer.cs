@@ -182,7 +182,12 @@
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
+<<<<<<< Updated upstream
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+=======
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+>>>>>>> Stashed changes
             this.Name = "frmAgregarCliente";
             this.Text = "Agregar Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
